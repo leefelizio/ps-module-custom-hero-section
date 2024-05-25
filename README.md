@@ -1,1 +1,2 @@
-# ps-module-custom-hero-section
+## Prestashop Custom Module
+# Custom Hero Section
