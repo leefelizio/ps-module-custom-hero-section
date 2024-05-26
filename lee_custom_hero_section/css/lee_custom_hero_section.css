@@ -1,0 +1,96 @@
+/**
+ * Custom Hero Section
+ * Copyright 2024 Lee Felizio Castro
+ * @author    Lee Felizio Castro <feliziolee@gmail.com>
+ * @copyright Since 2024 Lee Felizio Castro
+ * @license   https://opensource.org/license/mit MIT LICENSE
+ */
+:root{
+    --border-radius-m: 20px;
+
+    --color-primary: #ff8552;
+    --color-secondary: #ffc9ae;
+    --color-tertiary: #fee9bf;
+
+    --icon-size-s: 18px;
+
+    --spacer-s: 14px;
+    --spacer-m: 24px;
+    --spacer-xxl: 92px;
+
+    --text-color-primary: #4a4a4a;
+
+    --text-size-xs: 16px;
+    --text-size-s: 18px;
+    --text-size-xl: 56px;
+}
+
+/*
+** lee_custom_hero_section - Custom Hero Section
+*/
+.custom-hero-section{
+    background: linear-gradient(135deg, var(--color-tertiary) 0%, var(--color-secondary) 100%);
+    border-top-right-radius: var(--border-radius-m);
+    border-bottom-right-radius: var(--border-radius-m);
+    display: flex;
+    align-items: center;
+    min-height: 408px;
+    width: 100%;
+}
+.custom-hero-section .hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: var(--spacer-s);
+    width: 80%;
+    margin: 0 auto;
+}
+.custom-hero-section .hero-header{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacer-s);
+}
+.custom-hero-section .hero-header .hero-icon{
+    width: var(--icon-size-s);
+}
+.custom-hero-section h2,
+.custom-hero-section h3{
+    color: var(--text-color-primary);
+    margin: 0;
+    padding: 0;
+}
+.custom-hero-section .hero-header .eyebrow{
+    color: var(--color-primary);
+    font-size: var(--text-size-xs);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.custom-hero-section .hero-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacer-s);
+}
+.custom-hero-section .hero-body h2{
+    font-size: var(--text-size-xl);
+    font-weight: 500;
+}
+.custom-hero-section .hero-body h3{
+    font-size: var(--text-size-s);
+    font-weight: 400;
+}
+.custom-hero-section .hero-body .hero-btn{
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    font-size: var(--text-size-s);
+    font-weight: 600;
+    margin-top: var(--spacer-m);
+    padding: var(--spacer-s) var(--spacer-m);
+    text-decoration: none;
+    width: fit-content;
+}
